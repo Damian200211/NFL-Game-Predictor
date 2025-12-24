@@ -11,8 +11,7 @@ A Machine Learning application that predicts NFL game outcomes using advanced ef
 ##  Demo 
 
 
-
-https://github.com/user-attachments/assets/28a4a0b3-045e-4330-9356-49f332ded46a
+https://github.com/user-attachments/assets/aa9a53b1-9c28-4471-9ba0-55efe45b7de1
 
 
 
