@@ -11,7 +11,6 @@ from src.model import train_model, predict_games
 # --- PAGE CONFIG ---
 st.set_page_config(
     page_title="NFL Game Predictor",
-    page_icon="🏈",
     layout="wide"
 )
 
@@ -25,7 +24,7 @@ with st.sidebar:
     st.info("This model learns incrementally. As the season progresses, it gets smarter.")
 
 # --- MAIN APP ---
-st.title(f"🏈 NFL Predictor (Season {season})")
+st.title(f" NFL Predictor (Season {season})")
 st.markdown("""
 **Objective**: Predict game winners using advanced efficiency stats (EPA/CPOE).
 **Model**: XGBoost trained on a Walk-Forward Validation basis.
@@ -57,7 +56,7 @@ latest_stats = rolling_stats[rolling_stats['week'] < current_week].groupby('team
 predictions = predict_games(model, games_to_predict, latest_stats)
 
 # --- TABS ---
-tab1, tab2, tab3 = st.tabs(["🔮 Predictions", "📊 Team Power Rankings", "🧠 Model Insights"])
+tab1, tab2, tab3 = st.tabs([" Predictions", " Team Power Rankings", " Model Insights"])
 
 with tab1:
     st.subheader(f"Week {current_week} Predictions")
